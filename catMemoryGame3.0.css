@@ -1,0 +1,15 @@
+#playercontainer {
+    margin: auto;
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+div {
+
+    border: solid 2px black;
+}
