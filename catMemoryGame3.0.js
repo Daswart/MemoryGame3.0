@@ -13,14 +13,7 @@ console.log(punten)
 refreshButton.addEventListener('click', restartGame);
 
 //functie om het spel opnieuw te starten
-function restartGame() {
-    let r = confirm('Weet je zeker dat je het spel opnieuw wilt starten?');
-    if (r == true) {
-        location.reload();
-    } else {
-        console.log('pagina niet herladen!');
-    }
-}
+
 
 
 
