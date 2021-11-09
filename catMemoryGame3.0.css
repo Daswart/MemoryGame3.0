@@ -1,5 +1,86 @@
-#playercontainer {
+body {
+    background-color: lightcyan;
+    width: 100%;
+
+}
+
+main {
+    width: 98%;
+    height: auto;
+    font-family: Verdana,
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+#top {
+    border-top: 1px solid #fa9f00;
+    border-bottom: 1px solid #fa9f00;
+    border-left: none;
+    border-right: none;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    color: darkslategray;
+
+}
+
+#spelercontainer {
     margin: auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana,
+        Arial,
+        Helvetica,
+        sans-serif;
+    border: none;
+}
+
+#beurten {
+    margin: 2px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana,
+        Arial,
+        Helvetica,
+        sans-serif;
+    border: none;
+}
+
+#buttondiv {
+
+    text-align: center;
+    border: none;
+    margin: 15px auto 0 auto;
+
+
+}
+
+#refreshbutton {
+    position: relative;
+    top: 2px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #6CA1A0;
+    background-color: #3B1028;
+    cursor: pointer;
+
+
+}
+
+
+#playercontainer {
+    margin: 15px auto 5px auto;
     width: 70%;
     height: auto;
     display: grid;
@@ -7,9 +88,35 @@
     grid-template-rows: repeat(3, 150px);
     grid-gap: 10px;
     justify-content: center;
+    border: none;
 }
 
 div {
 
     border: solid 2px black;
+}
+
+#refreshbutton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #5a5a5a;
+    background-color: #fa9f00;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px #999;
+}
+
+#refreshbutton:hover {
+    background-color: #fd8200;
+}
+
+#refreshbutton:active {
+    background-color: #fd8200;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
