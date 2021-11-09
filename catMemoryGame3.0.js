@@ -10,7 +10,7 @@ const punten = document.getElementById('punten');
 console.log(punten)
 
 //knop om de pagina te refreshen.
-refreshButton.addEventListener('click', restartGame);
+// refreshButton.addEventListener('click', restartGame);
 
 //functie om het spel opnieuw te starten
 
