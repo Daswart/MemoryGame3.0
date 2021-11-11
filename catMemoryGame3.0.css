@@ -113,10 +113,251 @@ div {
 
 #refreshbutton:hover {
     background-color: #fd8200;
+    color: black;
 }
 
 #refreshbutton:active {
     background-color: #fd8200;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+#popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 10px 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#popup-content {
+    background-color: lightcyan;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #000;
+}
+
+.popup-button {
+    width: 50%;
+    display: block;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #5a5a5a;
+    background-color: #fa9f00;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px #999;
+}
+
+.popup-button:hover {
+    background-color: #fd8200;
+}
+
+.popup-button:active {
+    background-color: #fd8200;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+hr {
+    border-top: 1px solid #fa9f00;
+}
+
+#nieuwspel {
+    display: none;
+    position: relative;
+    z-index: 1;
+    bottom: 380px;
+    background-color: lightcyan;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px #000; */
+}
+
+#loader {
+    margin: 15px auto 0 auto;
+    border: 10px solid grey;
+    border-radius: 50%;
+    border-top: 10px solid #fa9f00;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #playercontainer {
+        margin: 15px auto 5px auto;
+        width: 70%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 10px;
+        justify-content: center;
+        border: none;
+    }
+
+    .item {
+
+        background-size: cover;
+
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 750px) {
+    #playercontainer {
+        margin: 15px auto 5px auto;
+        width: 70%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 70px);
+        grid-template-rows: repeat(3, 70px);
+        grid-gap: 10px;
+        justify-content: center;
+        border: none;
+    }
+
+    .item {
+
+        background-size: cover;
+
+    }
+
+    #spelercontainer {
+        margin: auto;
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana,
+            Arial,
+            Helvetica,
+            sans-serif;
+        border: none;
+    }
+
+    #beurten {
+        margin: 2px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Verdana,
+            Arial,
+            Helvetica,
+            sans-serif;
+        border: none;
+    }
+
+    #refreshbutton {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #5a5a5a;
+        background-color: #fa9f00;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 5px #999;
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    #playercontainer {
+        margin: 15px auto 5px auto;
+        width: 70%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 50px);
+        grid-template-rows: repeat(3, 50px);
+        grid-gap: 10px;
+        justify-content: center;
+        border: none;
+    }
+
+    .item {
+
+        background-size: cover;
+
+    }
+
+    #refreshbutton {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #5a5a5a;
+        background-color: #fa9f00;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 5px #999;
+    }
+
+
+
 }
